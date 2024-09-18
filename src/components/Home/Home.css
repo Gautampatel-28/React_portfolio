@@ -10,7 +10,7 @@
 }
 
 .home_img {
-  background: url("../../assets/dp.jpg");
+  background: url("../../assets/dpre.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,7 +19,7 @@
   height: 300px;
   order: 1;
   border-radius: 10%;
-  animation: profile_animate 8s ease-in-out infinite 1s;
+  animation: profile_animate 5s ease-in-out infinite 1s;
   justify-self: center;
 }
 

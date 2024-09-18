@@ -90,24 +90,24 @@ img{
 }
 
 
-/*Resuable css classes*/
+/*Reusable css*/
 .section{
   padding: 6rem 0 2rem;
 }
 
-.section__title{
+.section_title{
   font-size: var(--h1-font-size);
   color: var(--title-color);
 }
 
-.section__subtitle{
+.section_subtitle{
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
 }
 
-.section__title,
-.section__subtitle{
+.section_title,
+.section_subtitle{
   text-align: center;
 }
 
@@ -137,7 +137,7 @@ img{
   background-color: var(--title-color-dark);
 }
 
-.button__icon{
+.button_icon{
   margin-left: var(--mb-0.5);
 }
 
@@ -146,7 +146,7 @@ img{
   align-items: center;
 }
 
-
+/*Responsive*/
 @media screen and (max-width: 992px){
   .container{
     margin-left: var(--mb-1-5);
@@ -164,9 +164,17 @@ img{
 }
 
 @media screen and (max-width: 768px){
+  body{
+    margin: 0 0 var(--header-height) 0;
+  }
     .section{
       padding: 2rem 0 4rem;
     }
+
+    .section_subtitle{
+      margin-bottom: var(--mb-3);
+    }
+
 }
 
 

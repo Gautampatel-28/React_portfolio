@@ -61,7 +61,7 @@ const Data = () => {
         <p className="home_description">I'm creative designer based im in Mumbai, and I'm very passionate and dedicated to my work.</p>
 
         <a href="#contact" className="button button--flex">
-            Say Hello 
+            Say Hello &nbsp;
             <svg
                   className="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
