@@ -8,6 +8,7 @@
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -18,8 +19,8 @@
 }
 
 .nav__logo {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 0.5rem;
+  font-weight: 100;
   color: #333;
 }
 
@@ -57,6 +58,11 @@
   display: none;
 }
 
+.logoimg {
+  width: 60px;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -72,11 +78,13 @@
     opacity: 0;
     visibility: hidden;
   }
+
   .show-menu {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
   }
+
   .nav__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -88,6 +96,7 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
+
   .nav__close {
     display: block;
     position: absolute;
@@ -96,8 +105,11 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
-}
 
+  .logoimg {
+    width: 50px; 
+  }
+}
 
 @media screen and (min-width: 769px) {
   .nav__menu {
@@ -111,20 +123,25 @@
     padding: 0;
     box-shadow: none;
   }
+
   .nav__toggle,
   .nav__close {
     display: none;
   }
+
+  .nav-container {
+    padding: 0 2rem; 
+  }
 }
 
+@media screen and (max-width: 480px) {
+  .logoimg {
+    width: 40px; 
+  }
+}
 
-
-@media screen and (min-width: 350px){
-    .nav__menu{
-        padding: 1rem 0.25rem 1rem;
-    }
-
-    .nav_list{
-        column-gap: 0;
-    }
+@media screen and (max-width: 350px) {
+  .logoimg {
+    width: 30px; 
+  }
 }

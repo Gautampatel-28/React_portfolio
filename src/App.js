@@ -11,7 +11,7 @@ import Project from './components/Project/Project';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Contact from './components/Contact/Contact';
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
       <Project />
       <Contact/>
     </main>
+    <Footer />
    </>
   );
 }
