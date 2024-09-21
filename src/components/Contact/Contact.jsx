@@ -1,12 +1,13 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import './Contact.css';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
+import "./Contact.css";
 
 const Contact = () => {
   // Custom dark toast notification
-  const notify = () => toast.dark("Message Sent To Gautam!");
+  const notify = () => toast.dark("Message Sent To Gautam Patel!");
 
   const form = useRef();
 
@@ -14,17 +15,17 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_50a8qwo', 'template_c2apsrp', form.current, {
-        publicKey: '3vodSc_tc1Q-BRnHT',
+      .sendForm("service_50a8qwo", "template_c2apsrp", form.current, {
+        publicKey: "3vodSc_tc1Q-BRnHT",
       })
       .then(
         () => {
-          console.log('SUCCESS!');
-          notify(); 
-          form.current.reset(); 
+          console.log("SUCCESS!");
+          notify();
+          form.current.reset();
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          console.log("FAILED...", error.text);
         }
       );
   };
@@ -32,7 +33,14 @@ const Contact = () => {
   return (
     <>
       <section className="contact section" id="contact">
-        <h2 className="section_title">Get in Touch</h2>
+        <motion.h2
+          className="section_title"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          Get in Touch
+        </motion.h2>
         <span className="section_subtitle">Contact Us!</span>
 
         <div className="contact_container container grid">

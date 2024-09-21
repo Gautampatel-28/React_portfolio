@@ -5,6 +5,7 @@ import img2 from "../../assets/project2.jpg";
 import img3 from "../../assets/project1.jpg";
 import img4 from "../../assets/project2.jpg";
 import "./Project.css";
+import { motion } from "framer-motion";
 
 const Project = () => {
   const settings = {
@@ -36,7 +37,11 @@ const Project = () => {
   return (
     <>
       <section className="project container section" id="project">
-        <h2 className="section_title">My Projects</h2>
+        <motion.h2 className="section_title"
+        initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+        >My Projects</motion.h2>
         <span className="section_subtitle">
           Explore the range of projects I’ve worked on, showcasing my expertise
           in web development.

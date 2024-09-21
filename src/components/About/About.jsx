@@ -1,29 +1,40 @@
-import React from 'react'
-import "./About.css"
-import Info from './Info';
-import AboutImg from "../../assets/Dp1.png";
-import CV from "../../assets/GautamResume.pdf"
+import React from "react";
+import "./About.css";
+import Info from "./Info";
+import AboutImg from "../../assets/dp1.png";
+import CV from "../../assets/GautamResume.pdf";
 import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <>
-        <section className="about section" id='about'>
-            <motion.h2 className='section_title'
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.5 }}
-            >About Me!</motion.h2>
-            <span className='section_subtitle'>My Introduction</span>
+      <section className="about section" id="about">
+        <motion.h2
+          className="section_title"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          About Me!
+        </motion.h2>
+        <span className="section_subtitle">My Introduction</span>
 
-            <div className="about_container container grid">
-                <img src={AboutImg} alt="" className="about_img" />
-                <div className='about_data'>
-                <Info />
-                <p className='about_description'>Frontend developer, I create web pages with UI/UX user Interface, I have years of experience and many clients are happy with the projects carried out.</p>
+        <div className="about_container container grid">
+          <img src={AboutImg} alt="" className="about_img" />
+          <div className="about_data">
+            <Info />
+            <p className="about_description">
+              I’m a creative designer and full-stack developer based in Mumbai,
+              passionate about building visually appealing, responsive, and
+              user-friendly digital experiences. From intuitive front-end
+              designs to efficient back-end functionality, I combine creativity
+              with technical skills to deliver seamless solutions. Let’s create
+              something extraordinary together!
+            </p>
 
-                <a download="" href={CV} className='button button--flex'>Download CV &nbsp;
-                 <svg
+            <a download="" href={CV} className="button button--flex">
+              Download CV &nbsp;
+              <svg
                 className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -47,12 +58,13 @@ const About = () => {
                   d="M11.25 17.7502H7.25C6.84 17.7502 6.5 17.4102 6.5 17.0002C6.5 16.5902 6.84 16.2502 7.25 16.2502H11.25C11.66 16.2502 12 16.5902 12 17.0002C12 17.4102 11.66 17.7502 11.25 17.7502Z"
                   fill="var(--container-color)"
                 ></path>
-              </svg></a>
-                </div>
-            </div>
-        </section>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
