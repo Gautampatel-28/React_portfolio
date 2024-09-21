@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import './Header.css';
+import React, { useState } from "react";
+import "./Header.css";
 import logo from "../../assets/logo.jpeg";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -9,7 +10,24 @@ const Header = () => {
     <>
       <header className="header">
         <nav className="nav-container">
-          <a href="index.html" className="nav__logo"><img src={logo} alt="logo" className="logoimg" /></a>
+        <motion.a href="index.html" className="nav__logo">
+  <motion.img
+    src={logo}
+    alt="logo"
+    className="logoimg"
+    initial={{ y: -10, scale: 1 }}
+    animate={{
+      y: [2, -2], 
+      scale: [1, 1.05, 1], 
+      transition: {
+        duration: 1, 
+        ease: "linear", 
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    }}
+  />
+</motion.a>
 
           <div className={toggle ? "nav__menu show-menu" : "nav__menu"}>
             <ul className="nav__list grid">
@@ -45,10 +63,11 @@ const Header = () => {
               </li>
             </ul>
 
-
-            <i className="uil uil-times nav__close" onClick={() => setToggle(false)}></i>
+            <i
+              className="uil uil-times nav__close"
+              onClick={() => setToggle(false)}
+            ></i>
           </div>
-
 
           <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
             <i className="uil uil-apps"></i>

@@ -1,45 +1,45 @@
-
 import React from "react";
 import Slider from "react-slick";
-import "./Project.css";
 import img1 from "../../assets/project1.jpg";
 import img2 from "../../assets/project2.jpg";
 import img3 from "../../assets/project1.jpg";
 import img4 from "../../assets/project2.jpg";
+import "./Project.css";
 
 const Project = () => {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 2, // Number of slides shown on larger screens
-        slidesToScroll: 1,
-        autoplay: true, // Enable autoplay
-        autoplaySpeed: 3000, // Slide change interval
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-            },
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ],
-      };
-      
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
     <>
       <section className="project container section" id="project">
-        <h2 className="section_title">Projects</h2>
+        <h2 className="section_title">My Projects</h2>
         <span className="section_subtitle">
-          I have contributed to several projects where I have showcased my
-          expertise and skills in Reactjs, Nextjs, Vuejs, Node.js
+          Explore the range of projects I’ve worked on, showcasing my expertise
+          in web development.
         </span>
 
         <Slider {...settings} className="project__slider">
@@ -48,8 +48,8 @@ const Project = () => {
             <div className="project__content">
               <h3 className="project__title">Project One</h3>
               <p className="project__description">
-                A brief description of the project goes here. Highlighting the
-                technologies used and the objectives achieved.
+                A modern e-commerce platform built with React and Node.js,
+                featuring a secure checkout and real-time order tracking.
               </p>
             </div>
           </div>
@@ -59,8 +59,8 @@ const Project = () => {
             <div className="project__content">
               <h3 className="project__title">Project Two</h3>
               <p className="project__description">
-                Another project description with unique challenges and solutions
-                provided through cutting-edge technologies.
+                A personal portfolio website designed to highlight my skills and
+                projects, built with Next.js for optimal performance.
               </p>
             </div>
           </div>
@@ -70,8 +70,8 @@ const Project = () => {
             <div className="project__content">
               <h3 className="project__title">Project Three</h3>
               <p className="project__description">
-                Description about the project including its purpose, the tools
-                used, and the impact it had.
+                A social media application developed using the MERN stack, with
+                features like real-time messaging and notifications.
               </p>
             </div>
           </div>
@@ -81,14 +81,48 @@ const Project = () => {
             <div className="project__content">
               <h3 className="project__title">Project Four</h3>
               <p className="project__description">
-                This project involved several innovative approaches and
-                demonstrated advanced proficiency in tech stacks.
+                A task management tool built with Vue.js and Firebase, enabling
+                users to track progress and collaborate in real-time.
               </p>
             </div>
           </div>
         </Slider>
       </section>
     </>
+  );
+};
+
+// Custom Next Arrow Component
+const NextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} custom-next`}
+      style={{
+        ...style,
+        display: "block",
+        right: "-20px",
+        backgroundColor: "black",
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+// Custom Prev Arrow Component
+const PrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} custom-prev`}
+      style={{
+        ...style,
+        display: "block",
+        left: "-20px",
+        backgroundColor: "black",
+      }}
+      onClick={onClick}
+    />
   );
 };
 

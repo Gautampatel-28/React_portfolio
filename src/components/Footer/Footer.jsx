@@ -1,13 +1,28 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assets/logo.jpeg";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
     <>
       <footer className="footer">
-        <div className="footer_container container">
-          <h1 className="footer_title"><img src={logo} alt="logo" /></h1>
+        <motion.div className="footer_container container">
+          <motion.h1 className="footer_title">
+            <motion.img src={logo} alt="logo"
+    className="logoimg"
+    initial={{ y: -10, scale: 1 }}
+    animate={{
+      y: [2, -2], 
+      scale: [1, 1.05, 1], 
+      transition: {
+        duration: 1, 
+        ease: "linear", 
+        repeat: Infinity,
+        repeatType: "reverse",
+      },
+    }}/>
+          </motion.h1>
 
           <ul className="footer_list">
             <li>
@@ -53,7 +68,7 @@ const Footer = () => {
             </a>
           </div>
           <span className="footer_copy">&#169; Gautampatel. All rights reserved.</span>
-        </div>
+        </motion.div>
       </footer>
     </>
   );

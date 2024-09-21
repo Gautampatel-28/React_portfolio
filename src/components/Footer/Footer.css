@@ -12,7 +12,7 @@
 }
 
 .footer_title img {
-  width: 80px; /* Smaller logo */
+  width: 80px; 
   height: auto;
   margin-bottom: 1rem;
 }
@@ -33,7 +33,7 @@
 }
 
 .footer_link:hover {
-  color: #007bff; /* Light blue on hover */
+  color: #007bff; 
 }
 
 .footer_social {
@@ -44,14 +44,14 @@
 }
 
 .footer_social-link {
-  font-size: 1.5rem;
   color: #333;
   transition: color 0.3s, transform 0.3s;
 }
 
+
 .footer_social-link:hover {
   color: #007bff;
-  transform: translateY(-5px); /* Lift icon on hover */
+  transform: translateY(-5px); 
 }
 
 .footer_copy {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Qualification.css";
+import { motion } from "framer-motion";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -11,36 +12,64 @@ const Qualification = () => {
   return (
     <>
       <section className="qualification section">
-        <h2 className="section_title">Qualification</h2>
+        <motion.h2
+          className="section_title"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          Qualification
+        </motion.h2>
         <span className="section_subtitle">My Personal Journey</span>
 
         <div className="qualification_container container">
-          {/* Tab Controls */}
-          <div className="qualification_tabs">
-            <div
+          <motion.div className="qualification_tabs">
+            <motion.div
               className={
                 toggleState === 1
                   ? "qualification_button qualification_active"
                   : "qualification_button button--flex"
               }
               onClick={() => toggleTab(1)}
+              initial={{ y: -10, scale: 1 }}
+              animate={{
+                y: [2, -2],
+                scale: [1, 1.05, 1],
+                transition: {
+                  duration: 1,
+                  ease: "linear",
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                },
+              }}
             >
               <i className="uil uil-graduation-cap qualification_icon"></i>{" "}
               Education
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
               className={
                 toggleState === 2
                   ? "qualification_button qualification_active"
                   : "qualification_button button--flex"
               }
               onClick={() => toggleTab(2)}
+              initial={{ y: -10, scale: 1 }}
+              animate={{
+                y: [2, -2],
+                scale: [1, 1.05, 1],
+                transition: {
+                  duration: 1,
+                  ease: "linear",
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                },
+              }}
             >
               <i className="uil uil-briefcase-alt qualification_icon"></i>{" "}
               Experience
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
 
           {/* Qualification Sections */}
           <div className="qualification_sections">

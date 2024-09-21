@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Services.css";
+import { motion } from "framer-motion";
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -15,7 +16,14 @@ const Services = () => {
   return (
     <>
       <section className="services section" id="services">
-        <h2 className="section_title">Services</h2>
+        <motion.h2
+          className="section_title"
+          initial={{ opacity: 0, y: -100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+        >
+          Services
+        </motion.h2>
         <span className="section_subtitle">What I offer</span>
 
         <div className="services_container container grid">

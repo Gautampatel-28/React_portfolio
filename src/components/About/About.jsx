@@ -3,12 +3,17 @@ import "./About.css"
 import Info from './Info';
 import AboutImg from "../../assets/Dp1.png";
 import CV from "../../assets/GautamResume.pdf"
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <>
         <section className="about section" id='about'>
-            <h2 className='section_title'>About Me!</h2>
+            <motion.h2 className='section_title'
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            >About Me!</motion.h2>
             <span className='section_subtitle'>My Introduction</span>
 
             <div className="about_container container grid">

@@ -1,11 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Data = () => {
   return (
     <>
-      <div className="home_data">
-        <h1 className="home_title">
-          Gautam Patel
+      <motion.div className="home_data">
+        <motion.h1
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        className="home_title"
+      >
+           Gautam Patel
           <svg
             width="36"
             height="36"
@@ -55,7 +61,7 @@ const Data = () => {
               fill="#EBA352"
             ></path>
           </svg>
-        </h1>
+      </motion.h1>
 
         <h3 className="home_subtitle">MERN Developer</h3>
         <p className="home_description">I'm creative designer based im in Mumbai, and I'm very passionate and dedicated to my work.</p>
@@ -80,7 +86,7 @@ const Data = () => {
                   ></path>
             </svg>
         </a>
-      </div>
+      </motion.div>
     </>
   );
 };
