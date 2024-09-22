@@ -5,14 +5,14 @@ const Social = () => {
     <>
       <div className="home_social">
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/gomsiiii/"
           className="home_social-icon"
           target="__blank"
         >
           <i className="uil uil-instagram"></i>
         </a>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/gautampatel28/"
           className="home_social-icon"
           target="__blank"
         >

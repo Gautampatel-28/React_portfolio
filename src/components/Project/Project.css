@@ -9,8 +9,9 @@
 
 .project__img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  height: auto; /* Remove fixed height */
+  max-height: 400px; /* Set a maximum height for the image */
+  object-fit: contain; /* Ensures the image scales proportionally */
   border-radius: 10px;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease-in-out;
@@ -83,7 +84,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .project__img {
-    height: 250px;
+    max-height: 250px;
   }
 
   .project__title {
@@ -103,7 +104,7 @@
 
 @media (max-width: 480px) {
   .project__img {
-    height: 200px;
+    max-height: 200px;
   }
 
   .project__title {
@@ -121,10 +122,9 @@
   }
 }
 
-/* Responsive for screens with max width 350px */
 @media (max-width: 350px) {
   .project__img {
-    height: 180px;
+    max-height: 180px;
   }
 
   .project__title {
