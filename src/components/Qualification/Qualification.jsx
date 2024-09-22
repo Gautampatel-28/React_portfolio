@@ -71,9 +71,9 @@ const Qualification = () => {
             </motion.div>
           </motion.div>
 
-          {/* Qualification Sections */}
+          
           <div className="qualification_sections">
-            {/* Education Section */}
+            
             <div
               className={
                 toggleState === 1
@@ -180,24 +180,24 @@ const Qualification = () => {
                   <span className="qualification_line"></span>
                 </div>
                 <div>
-                  {/* <h3 className="qualification_title"></h3> */}
+                  
                   <span className="qualification_subtitle">
                     <br /><br /><br />
                   </span>
                   <div className="qualification_calender">
-                    {/* <i className="uil uil-calendar-alt"></i>  */}
+                    
                   </div>
                 </div>
               </div>
 
               <div className="qualification_data">
                 <div>
-                  {/* <h3 className="qualification_title"></h3> */}
+                  
                   <span className="qualification_subtitle">
                   <br /><br /><br />
                   </span>
                   <div className="qualification_calender">
-                    {/* <i className="uil uil-calendar-alt"></i>  */}
+                    
                   </div>
                 </div>
                 <div>
@@ -213,12 +213,12 @@ const Qualification = () => {
                   <span className="qualification_line"></span>
                 </div>
                 <div>
-                  {/* <h3 className="qualification_title"></h3> */}
+                  
                   <span className="qualification_subtitle">
                   <br /><br /><br />
                   </span>
                   <div className="qualification_calender">
-                    {/* <i className="uil uil-calendar-alt"></i>  */}
+                    
                   </div>
                 </div>
               </div>

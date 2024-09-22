@@ -9,9 +9,9 @@
 
 .project__img {
   width: 100%;
-  height: auto; /* Remove fixed height */
-  max-height: 400px; /* Set a maximum height for the image */
-  object-fit: contain; /* Ensures the image scales proportionally */
+  height: auto;
+  max-height: 400px; 
+  object-fit: contain; 
   border-radius: 10px;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease-in-out;

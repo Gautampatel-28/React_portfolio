@@ -13,16 +13,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem; 
 }
 
 .skill-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem; 
   max-width: 350px; 
-  width: 100%; 
+  width: calc(50% - 1rem); 
   transition: transform 0.3s ease;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .skill-icon svg {
-  font-size: 5rem; /* Icon size */
+  font-size: 5rem; 
 }
 
 .react { color: #61DAFB; }
@@ -43,14 +43,21 @@
 
 @media (max-width: 768px) {
   .skills-title {
-    font-size: 2.5rem;
+    font-size: 2.5rem; 
+  }
+
+  .skills-icons {
+    gap: 2rem; 
+  }
+
+  .skill-icon {
+    width: calc(50% - 1rem); 
+    padding: 1rem; 
   }
 
   .skill-icon svg {
-    font-size: 4rem;
-    grid-template-columns: 2;
+    font-size: 4rem; 
   }
-
 }
 
 @media (max-width: 480px) {
@@ -58,19 +65,30 @@
     font-size: 2rem;
   }
 
+  .skills-icons {
+    gap: 1.5rem; 
+  }
+
+  .skill-icon {
+    width: calc(50% - 1rem); 
+    padding: 1rem; 
+  }
+
   .skill-icon svg {
     font-size: 4rem; 
-    grid-template-columns: 2;
   }
 }
 
-@media (max-width: 350px){
+@media (max-width: 350px) {
   .skills-title {
     font-size: 1.5rem;
   }
 
+  .skill-icon {
+    width: calc(50% - 1rem); 
+  }
+
   .skill-icon svg {
-    font-size: 2.5rem; 
-    display: flex;
+    font-size: 3.5rem; 
   }
 }

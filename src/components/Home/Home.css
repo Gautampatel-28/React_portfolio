@@ -140,7 +140,7 @@
     box-shadow: inset 0 0 0 8px rgb(255, 255, 255 / 30%);
   }
   .home_scroll {
-    /* margin-left: 7.5rem; */
+    
     display: none;
   }
 }

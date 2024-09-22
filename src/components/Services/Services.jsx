@@ -27,7 +27,7 @@ const Services = () => {
         <span className="section_subtitle">What I offer</span>
 
         <div className="services_container container grid">
-          {/* Service 1 */}
+          
           <div className="services_content">
             <div>
               <i className="uil uil-web-grid services_icon"></i>
@@ -53,7 +53,7 @@ const Services = () => {
                   className="uil uil-times services_modal-close"
                   onClick={closeModal}
                 ></i>{" "}
-                {/* Close button */}
+                
                 <h3 className="services_modal-title">Front-End Development</h3>
                 <p className="services_modal-description">
                   Enthusiastic front-end developer skilled in HTML, CSS,
@@ -96,7 +96,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Service 2 */}
+          
           <div className="services_content">
             <div>
               <i className="uil uil-edit services_icon"></i>
@@ -167,7 +167,7 @@ const Services = () => {
             </div>
           </div>
 
-          {/* Service 3 */}
+          
           <div className="services_content">
             <div>
               <i className="uil uil-arrow services_icon"></i>
