@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import Info from "./Info";
-import AboutImg from "../../assets/dp1.png";
+import AboutImg from "../../assets/dp1.jpg";
 import CV from "../../assets/GautamResume.pdf";
 import { motion } from "framer-motion";
 
