@@ -50,7 +50,7 @@
 }
 
 .nav__link:hover {
-  color: #007bff;
+  color: violet;
 }
 
 .nav__toggle,
@@ -63,6 +63,15 @@
   height: auto;
 }
 
+/* change background header*/
+.scroll-header{
+  box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+}
+
+/* .nav__link,
+active-link:hover{
+  color: black;
+} */
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
