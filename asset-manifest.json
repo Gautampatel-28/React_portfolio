@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React_portfolio/static/css/main.34244572.css",
-    "main.js": "/React_portfolio/static/js/main.c927a44f.js",
+    "main.js": "/React_portfolio/static/js/main.b000b77c.js",
     "static/media/dp.jpg": "/React_portfolio/static/media/dp.2ffd4f5672ca2224a5c4.jpg",
     "static/media/project1.jpg": "/React_portfolio/static/media/project1.5c2e85adfcac9d357987.jpg",
     "static/media/project3.jpg": "/React_portfolio/static/media/project3.d94f4e642fc880857594.jpg",
@@ -9,7 +9,7 @@
     "static/media/project5.jpg": "/React_portfolio/static/media/project5.ca643a4eb1906f568db2.jpg",
     "static/media/dp1.jpg": "/React_portfolio/static/media/dp1.fe8fd8ac7653c7da9cf1.jpg",
     "static/media/project2.jpg": "/React_portfolio/static/media/project2.518d747b6ed76603ab58.jpg",
-    "static/media/GautamResume.pdf": "/React_portfolio/static/media/GautamResume.311b439e76ad5cccfb02.pdf",
+    "static/media/GautamResume.pdf": "/React_portfolio/static/media/GautamResume.55ab5ba3f3f590566144.pdf",
     "static/media/logo.jpeg": "/React_portfolio/static/media/logo.3673cc93d488240c906f.jpeg",
     "static/media/slick.svg": "/React_portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/React_portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -17,10 +17,10 @@
     "static/media/slick.woff": "/React_portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React_portfolio/index.html",
     "main.34244572.css.map": "/React_portfolio/static/css/main.34244572.css.map",
-    "main.c927a44f.js.map": "/React_portfolio/static/js/main.c927a44f.js.map"
+    "main.b000b77c.js.map": "/React_portfolio/static/js/main.b000b77c.js.map"
   },
   "entrypoints": [
     "static/css/main.34244572.css",
-    "static/js/main.c927a44f.js"
+    "static/js/main.b000b77c.js"
   ]
 }
