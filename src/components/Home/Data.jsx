@@ -14,7 +14,7 @@ const Data = () => {
            Gautam Patel
       </motion.h1>
 
-        <h3 className="home_subtitle">MERN Developer</h3>
+        <h3 className="home_subtitle">React.js Developer</h3>
         <p className="home_description">I'm creative designer based in Mumbai, and I'm very passionate and dedicated to my work.</p>
 
         <a href="#contact" className="button button--flex">

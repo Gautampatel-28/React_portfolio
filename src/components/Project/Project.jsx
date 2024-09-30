@@ -4,8 +4,10 @@ import img1 from "../../assets/project1.jpg";
 import img2 from "../../assets/project2.jpg";
 import img3 from "../../assets/project3.jpg";
 import img4 from "../../assets/project4.jpg";
+import img5 from "../../assets/project5.jpg";
 import "./Project.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const settings = {
@@ -51,71 +53,158 @@ const Project = () => {
         </span>
 
         <Slider {...settings} className="project__slider">
+          {/* Project 1 */}
           <div className="project__item">
-            <img src={img1} alt="Project 1" className="project__img" />
-            <div className="project__content">
-              <h3 className="project__title">
-                Streamit Lite - Video Streaming Template
-              </h3>
-              <p className="project__description">
-                During my internship, I worked on Reactjs/Nextjs project based
-                on video streaming. I contributed to developing dark-style UI.
-                This template supports media streaming businesses in launching
-                and managing their services efficiently.
-              </p>
-            </div>
+            <Link
+              to="https://templates.iqonic.design/streamit-dist/frontend/react/home"
+              target="__blank"
+            >
+              <img src={img1} alt="Project 1" className="project__img" />
+              <div className="project__content">
+                <h3 className="project__title">
+                  <strong>Streamit Lite - Video Streaming Template</strong>
+                </h3>
+                <p className="project__description">
+                  During my internship, I worked on a{" "}
+                  <strong>Reactjs/Nextjs</strong> project based on video
+                  streaming. I contributed to developing a{" "}
+                  <strong>dark-style UI</strong>. This template supports media
+                  streaming businesses in launching and managing their services
+                  efficiently.
+                </p>
+              </div>
+            </Link>
           </div>
 
+          {/* Project 2 */}
+{/* Project 2 */}
+<div className="project__item">
+  <Link
+    to="https://templates.iqonic.design/hope-ui/pro/react/dashboard"
+    target="__blank"
+  >
+    <img src={img2} alt="Project 2" className="project__img" />
+    <div className="project__content">
+      <h3 className="project__title">
+        <strong>Hope UI - Bootstrap Dashboard</strong>
+      </h3>
+      <div className="project__description">
+  <strong>Hope UI - Bootstrap Admin Dashboard</strong>
+  <br />
+  <strong>ID:</strong> hope-ui-bootstrap-dashboard
+  <br />
+  <strong>Features:</strong>
+  <ul>
+    <strong>Customizable Dashboards</strong>: Drag-and-drop widgets.
+    <strong>UI Components Library</strong>: Pre-built components like buttons and forms.
+    <strong>Real-Time Analytics</strong>: Interactive charts and graphs.
+    <strong>Advanced Forms</strong>: Multiple layouts and validations.
+    <strong>Responsive Design</strong>: Optimized for mobile devices.
+    <strong>Cross-browser Compatibility</strong>: Works on all major browsers.
+    <strong>Dark & Light Modes</strong>: Theme options available.
+  </ul>
+</div>
+
+    </div>
+  </Link>
+</div>
+
+          {/* Project 3 */}
           <div className="project__item">
-            <img src={img2} alt="Project 2" className="project__img" />
-            <div className="project__content">
-              <h3 className="project__title">Hope UI - Bootstrap Dashboard</h3>
-              <p className="project__description">
-                During my internship, I actively contributed to the development
-                of the Hope UI project, a professional-grade Bootstrap Admin
-                Dashboard Template and UI Components Library. My primary
-                responsibility involved building and optimizing production-ready
-                components aimed at improving the efficiency and scalability of
-                enterprise-level applications. By focusing on reusable,
-                high-quality UI elements, I helped streamline development
-                workflows and ensure faster, more consistent implementation of
-                user interface elements across various projects.
-              </p>
-            </div>
+            <Link
+              to="https://gautampatel-28.github.io/Real_Estate/"
+              target="__blank"
+            >
+              <img src={img3} alt="Project 3" className="project__img" />
+              <div className="project__content">
+                <h3 className="project__title">
+                  <strong>Real_Estate - React_js</strong>
+                </h3>
+                <p className="project__description">
+                  A comprehensive <strong>Real Estate Management System</strong>{" "}
+                  designed to help users manage, browse, and purchase{" "}
+                  <strong>real estate properties</strong> online. This system
+                  simplifies real estate transactions for both buyers and
+                  sellers by providing detailed property listings,{" "}
+                  <strong>search functionality</strong>, and an{" "}
+                  <strong>admin dashboard</strong> for system management.
+                  Additionally, the project includes a static landing page to
+                  introduce the platform to users.
+                </p>
+              </div>
+            </Link>
           </div>
 
-          <div className="project__item">
-            <img src={img3} alt="Project 3" className="project__img" />
-            <div className="project__content">
-              <h3 className="project__title">Real_Estate - React_js</h3>
-              <p className="project__description">
-                Real Estate Management System A comprehensive Real Estate
-                Management System designed to help users manage, browse, and
-                purchase real estate properties online. This system simplifies
-                real estate transactions for both buyers and sellers by
-                providing detailed property listings, search functionality, and
-                an admin dashboard for system management. Additionally, the
-                project includes a static landing page to introduce the platform
-                to users.
-              </p>
-            </div>
-          </div>
-
+          {/* Project 4 */}
           <div className="project__item">
             <img src={img4} alt="Project 4" className="project__img" />
             <div className="project__content">
-              <h3 className="project__title">React Ecommerce Application</h3>
+              <h3 className="project__title">
+                <strong>React Ecommerce-Application</strong>
+              </h3>
               <p className="project__description">
-                A fully functional **Ecommerce web application** built with
-                **React.js**, offering a seamless shopping experience. Features
-                include **product listing** with filtering, **search
-                functionality**, detailed **product views**, a **shopping cart**
-                with quantity management, **user authentication**, **payment
-                integration**, and **order tracking**. The app is **responsive**
-                and optimized for both desktop and mobile, with **Redux** for
-                state management and **React Router** for navigation.
+                A fully functional <strong>Ecommerce web application</strong>{" "}
+                built with
+                <strong> React.js</strong>, offering a seamless shopping
+                experience. Features include <strong>product listing</strong>{" "}
+                with filtering, <strong>search functionality</strong>, detailed{" "}
+                <strong>product views</strong>, a <strong>shopping cart</strong>
+                with quantity management, <strong>
+                  user authentication
+                </strong>, <strong>payment integration</strong>, and{" "}
+                <strong>order tracking</strong>. The app is{" "}
+                <strong>responsive</strong>
+                and optimized for both desktop and mobile, with{" "}
+                <strong>Redux</strong> for state management and{" "}
+                <strong>React Router</strong> for navigation.
               </p>
             </div>
+          </div>
+
+          {/* Project 5 */}
+          <div className="project__item">
+            <Link
+              to="https://gautampatel-28.github.io/Quiz.hub/"
+              target="__blank"
+            >
+              <img src={img5} alt="Project 5" className="project__img" />
+              <div className="project__content">
+                <h3 className="project__title">
+                  <strong>BrainBash Quiz-Api</strong>
+                </h3>
+                <p className="project__description">
+                  Quiz Hub is an interactive quiz application that allows users
+                  to test their knowledge on various topics. Leveraging a{" "}
+                  <strong>RESTful API</strong>, it provides{" "}
+                  <strong>real-time quiz questions</strong> and answers.
+                </p>
+                <strong>Features:</strong>
+                <div>
+                  <ul>
+                    <li>
+                      <strong>User-Friendly Interface</strong>: Simple and
+                      intuitive design for easy navigation.
+                    </li>
+                    <li>
+                      <strong>Diverse Categories</strong>: A wide range of quiz
+                      topics available for selection.
+                    </li>
+                    <li>
+                      <strong>Real-Time Data Fetching</strong>: Fetches the
+                      latest questions from an external API.
+                    </li>
+                    <li>
+                      <strong>Score Tracking</strong>: Users can see their
+                      performance after each quiz.
+                    </li>
+                    <li>
+                      <strong>Responsive Design</strong>: Fully functional on
+                      both desktop and mobile devices.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </Link>
           </div>
         </Slider>
       </section>
