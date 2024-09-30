@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/React_portfolio/static/css/main.34244572.css",
-    "main.js": "/React_portfolio/static/js/main.b62546f9.js",
+    "main.js": "/React_portfolio/static/js/main.c927a44f.js",
     "static/media/dp.jpg": "/React_portfolio/static/media/dp.2ffd4f5672ca2224a5c4.jpg",
     "static/media/project1.jpg": "/React_portfolio/static/media/project1.5c2e85adfcac9d357987.jpg",
     "static/media/project3.jpg": "/React_portfolio/static/media/project3.d94f4e642fc880857594.jpg",
     "static/media/project4.jpg": "/React_portfolio/static/media/project4.d7d1991f3377423b2afe.jpg",
+    "static/media/project5.jpg": "/React_portfolio/static/media/project5.ca643a4eb1906f568db2.jpg",
     "static/media/dp1.jpg": "/React_portfolio/static/media/dp1.fe8fd8ac7653c7da9cf1.jpg",
     "static/media/project2.jpg": "/React_portfolio/static/media/project2.518d747b6ed76603ab58.jpg",
     "static/media/GautamResume.pdf": "/React_portfolio/static/media/GautamResume.311b439e76ad5cccfb02.pdf",
@@ -16,10 +17,10 @@
     "static/media/slick.woff": "/React_portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React_portfolio/index.html",
     "main.34244572.css.map": "/React_portfolio/static/css/main.34244572.css.map",
-    "main.b62546f9.js.map": "/React_portfolio/static/js/main.b62546f9.js.map"
+    "main.c927a44f.js.map": "/React_portfolio/static/js/main.c927a44f.js.map"
   },
   "entrypoints": [
     "static/css/main.34244572.css",
-    "static/js/main.b62546f9.js"
+    "static/js/main.c927a44f.js"
   ]
 }
