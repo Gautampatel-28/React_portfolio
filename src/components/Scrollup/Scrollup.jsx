@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Scrollup.css";
+import { Link } from 'react-router-dom';
+
 
 const Scrollup = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -36,9 +38,9 @@ const Scrollup = () => {
     return (
         <>
             {isVisible && (
-                <a href="#" className='scrollup show-scroll'>
+                <Link to="#" className='scrollup show-scroll'>
                     <i className='uil uil-arrow-up scrollup_icon'></i>
-                </a>
+                </Link>
             )}
         </>
     );

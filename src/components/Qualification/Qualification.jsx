@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Qualification.css";
 import { motion } from "framer-motion";
+import logo1 from "../../assets/goldenmaceLogo.png";
+import logo2 from "../../assets/OllatoLogo.png";
+import { Link } from "react-router-dom";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -71,9 +74,7 @@ const Qualification = () => {
             </motion.div>
           </motion.div>
 
-          
           <div className="qualification_sections">
-            
             <div
               className={
                 toggleState === 1
@@ -85,9 +86,7 @@ const Qualification = () => {
               <div className="qualification_data">
                 <div>
                   <h3 className="qualification_title">St.Francis School</h3>
-                  <span className="qualification_subtitle">
-                    Mumbai-India
-                  </span>
+                  <span className="qualification_subtitle">Mumbai-India</span>
                   <div className="qualification_calender">
                     <i className="uil uil-graduation-cap"></i> 2007-2017
                   </div>
@@ -105,10 +104,10 @@ const Qualification = () => {
                   <span className="qualification_line"></span>
                 </div>
                 <div>
-                  <h3 className="qualification_title">RR.International College</h3>
-                  <span className="qualification_subtitle">
-                    Mumbai-India
-                  </span>
+                  <h3 className="qualification_title">
+                    RR.International College
+                  </h3>
+                  <span className="qualification_subtitle">Mumbai-India</span>
                   <div className="qualification_calender">
                     <i className="uil uil-graduation-cap"></i> 2018-2020
                   </div>
@@ -117,9 +116,11 @@ const Qualification = () => {
 
               <div className="qualification_data">
                 <div>
-                  <h3 className="qualification_title">Bachelor in Computer Application</h3>
+                  <h3 className="qualification_title">
+                    Bachelor in Computer Application
+                  </h3>
                   <span className="qualification_subtitle">
-                  Tilak Maharasthra Vidyapeeth, Pune
+                    Tilak Maharasthra Vidyapeeth, Pune
                   </span>
                   <div className="qualification_calender">
                     <i className="uil uil-graduation-cap"></i> 2020 - 2023
@@ -138,9 +139,11 @@ const Qualification = () => {
                   <span className="qualification_line"></span>
                 </div>
                 <div>
-                  <h3 className="qualification_title">Master in Computer Application</h3>
+                  <h3 className="qualification_title">
+                    Master in Computer Application
+                  </h3>
                   <span className="qualification_subtitle">
-                  Tilak Maharasthra Vidyapeeth, Pune
+                    Tilak Maharasthra Vidyapeeth, Pune
                   </span>
                   <div className="qualification_calender">
                     <i className="uil uil-graduation-cap"></i> 2023 - 2025
@@ -157,15 +160,64 @@ const Qualification = () => {
                   : "qualification_content"
               }
             >
+              <Link to="https://goldenmace.com/" className="black-link" target="__blank">
+                <div className="qualification_data">
+                  <div>
+                    <img
+                      src={logo1}
+                      alt="GoldenMace Logo"
+                      className="qualification_logo"
+                    />
+                    <h3 className="qualification_title">
+                      GoldenMace IT Solutions
+                    </h3>
+                    <span className="qualification_subtitle">
+                      Reactjs/Nextjs Developer Intern
+                    </span>
+                    <div className="qualification_calender">
+                      <i className="uil uil-briefcase-alt"></i> 10/2023 -
+                      05/2024
+                    </div>
+                  </div>
+                  <div>
+                    <span className="qualification_rounder"></span>
+                    <span className="qualification_line"></span>
+                  </div>
+                </div>
+              </Link>
+
+              <Link to="https://ollato.com/" className="black-link" target="__blank">
               <div className="qualification_data">
+                <div></div>
                 <div>
-                  <h3 className="qualification_title">Goldenmace IT Solutions</h3>
+                  <span className="qualification_rounder"></span>
+                  <span className="qualification_line"></span>
+                </div>
+                <div>
+                  <img
+                    src={logo2}
+                    alt="Ollato Logo"
+                    className="qualification_logo"
+                  />
+                  <h3 className="qualification_title">Ollato Mind Mapping</h3>
                   <span className="qualification_subtitle">
-                    Reactjs/Nextjs Developer Intern
+                    Reactjs Developer
                   </span>
                   <div className="qualification_calender">
-                    <i className="uil uil-briefcase-alt"></i> 10/2023 - 05/2024
+                    <i className="uil uil-briefcase-alt"></i> 12/2024 - Present
                   </div>
+                </div>
+              </div>
+              </Link>
+
+              <div className="qualification_data">
+                <div>
+                  <span className="qualification_subtitle">
+                    <br />
+                    <br />
+                    <br />
+                  </span>
+                  <div className="qualification_calender"></div>
                 </div>
                 <div>
                   <span className="qualification_rounder"></span>
@@ -180,46 +232,12 @@ const Qualification = () => {
                   <span className="qualification_line"></span>
                 </div>
                 <div>
-                  
                   <span className="qualification_subtitle">
-                    <br /><br /><br />
+                    <br />
+                    <br />
+                    <br />
                   </span>
-                  <div className="qualification_calender">
-                    
-                  </div>
-                </div>
-              </div>
-
-              <div className="qualification_data">
-                <div>
-                  
-                  <span className="qualification_subtitle">
-                  <br /><br /><br />
-                  </span>
-                  <div className="qualification_calender">
-                    
-                  </div>
-                </div>
-                <div>
-                  <span className="qualification_rounder"></span>
-                  <span className="qualification_line"></span>
-                </div>
-              </div>
-
-              <div className="qualification_data">
-                <div></div>
-                <div>
-                  <span className="qualification_rounder"></span>
-                  <span className="qualification_line"></span>
-                </div>
-                <div>
-                  
-                  <span className="qualification_subtitle">
-                  <br /><br /><br />
-                  </span>
-                  <div className="qualification_calender">
-                    
-                  </div>
+                  <div className="qualification_calender"></div>
                 </div>
               </div>
             </div>
