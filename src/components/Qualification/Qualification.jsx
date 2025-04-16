@@ -201,10 +201,10 @@ const Qualification = () => {
                   />
                   <h3 className="qualification_title">Ollato Mind Mapping</h3>
                   <span className="qualification_subtitle">
-                    Reactjs Developer
+                    React.js/node.js Developer
                   </span>
                   <div className="qualification_calender">
-                    <i className="uil uil-briefcase-alt"></i> 12/2024 - Present
+                    <i className="uil uil-briefcase-alt"></i> 11/2024 - 04/2025
                   </div>
                 </div>
               </div>
