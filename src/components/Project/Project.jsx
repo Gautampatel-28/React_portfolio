@@ -5,11 +5,45 @@ import img2 from "../../assets/project2.jpg";
 import img3 from "../../assets/project3.jpg";
 import img4 from "../../assets/project4.jpg";
 import img5 from "../../assets/project5.jpg";
+import img6 from "../../assets/project6.jpg";
+import img7 from "../../assets/project7.jpg";
 import "./Project.css";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Project = () => {
+  const NextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} custom-next`}
+        style={{
+          ...style,
+          display: "block",
+          right: "-20px",
+          backgroundColor: "black",
+        }}
+        onClick={onClick}
+      />
+    );
+  };
+
+  const PrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} custom-prev`}
+        style={{
+          ...style,
+          display: "block",
+          left: "-20px",
+          backgroundColor: "black",
+        }}
+        onClick={onClick}
+      />
+    );
+  };
+
   const settings = {
     dots: true,
     infinite: true,
@@ -77,37 +111,42 @@ const Project = () => {
           </div>
 
           {/* Project 2 */}
-{/* Project 2 */}
-<div className="project__item">
-  <Link
-    to="https://templates.iqonic.design/hope-ui/pro/react/dashboard"
-    target="__blank"
-  >
-    <img src={img2} alt="Project 2" className="project__img" />
-    <div className="project__content">
-      <h3 className="project__title">
-        <strong>Hope UI - Bootstrap Dashboard</strong>
-      </h3>
-      <div className="project__description">
-  <strong>Hope UI - Bootstrap Admin Dashboard</strong>
-  <br />
-  <strong>ID:</strong> hope-ui-bootstrap-dashboard
-  <br />
-  <strong>Features:</strong>
-  <ul>
-    <strong>Customizable Dashboards</strong>: Drag-and-drop widgets.
-    <strong>UI Components Library</strong>: Pre-built components like buttons and forms.
-    <strong>Real-Time Analytics</strong>: Interactive charts and graphs.
-    <strong>Advanced Forms</strong>: Multiple layouts and validations.
-    <strong>Responsive Design</strong>: Optimized for mobile devices.
-    <strong>Cross-browser Compatibility</strong>: Works on all major browsers.
-    <strong>Dark & Light Modes</strong>: Theme options available.
-  </ul>
-</div>
-
-    </div>
-  </Link>
-</div>
+          <div className="project__item">
+            <Link
+              to="https://templates.iqonic.design/hope-ui/pro/react/dashboard"
+              target="__blank"
+            >
+              <img src={img2} alt="Project 2" className="project__img" />
+              <div className="project__content">
+                <h3 className="project__title">
+                  <strong>Hope UI - Bootstrap Dashboard</strong>
+                </h3>
+                <div className="project__description">
+                  <strong>Hope UI - Bootstrap Admin Dashboard</strong>
+                  <br />
+                  <strong>ID:</strong> hope-ui-bootstrap-dashboard
+                  <br />
+                  <strong>Features:</strong>
+                  <ul>
+                    <strong>Customizable Dashboards</strong>: Drag-and-drop
+                    widgets.
+                    <strong>UI Components Library</strong>: Pre-built components
+                    like buttons and forms.
+                    <strong>Real-Time Analytics</strong>: Interactive charts and
+                    graphs.
+                    <strong>Advanced Forms</strong>: Multiple layouts and
+                    validations.
+                    <strong>Responsive Design</strong>: Optimized for mobile
+                    devices.
+                    <strong>Cross-browser Compatibility</strong>: Works on all
+                    major browsers.
+                    <strong>Dark & Light Modes</strong>: Theme options
+                    available.
+                  </ul>
+                </div>
+              </div>
+            </Link>
+          </div>
 
           {/* Project 3 */}
           <div className="project__item">
@@ -206,43 +245,132 @@ const Project = () => {
               </div>
             </Link>
           </div>
+
+          {/* Project 6 */}
+          <div className="project__item">
+            <Link to="https://pps-assessment-1-0.vercel.app/" target="__blank">
+              <img src={img6} alt="Project 6" className="project__img" />
+              <div className="project__content">
+                <h3 className="project__title">
+                  <strong>
+                    PPS-ASSESSMENT-1.0 Student Assessment psychology Panel
+                  </strong>
+                </h3>
+                <p className="project__description">
+                  PPS Assessment is a student psychological assessment platform
+                  developed from scratch using <strong>React.js</strong>,{" "}
+                  <strong>Tailwind CSS</strong>, and <strong>Node.js</strong>{" "}
+                  following a <strong>Microservices Architecture</strong>. It
+                  enables users to take psychological tests with features like
+                  login, payment, MCQ-based assessments, and report generation.
+                </p>
+                <strong>Features:</strong>
+                <div>
+                  <ul>
+                    <li>
+                      <strong>Modern UI</strong>: Built with reusable and
+                      responsive React components styled using Tailwind CSS.
+                    </li>
+                    <li>
+                      <strong>Microservices Integration</strong>: Handles
+                      authentication, assessment, scoring, reporting, payment,
+                      and notifications through separate services.
+                    </li>
+                    <li>
+                      <strong>Secure Login</strong>: User authentication flow
+                      using dedicated Auth microservice.
+                    </li>
+                    <li>
+                      <strong>Assessment System</strong>: Real-time MCQ tests
+                      with auto-scoring and report generation.
+                    </li>
+                    <li>
+                      <strong>API Gateway</strong>: Unified access to all
+                      services through a centralized gateway.
+                    </li>
+                    <li>
+                      <strong>Fully Responsive</strong>: Optimized for both
+                      mobile and desktop devices.
+                    </li>
+                    <li>
+                      <strong>Bug Fixing & Documentation</strong>: Thoroughly
+                      tested, debugged, and well-documented workflow.
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  <strong>Demo Login:</strong> gautam.ollato@gmail.com |{" "}
+                  <strong>Password:</strong> 12345678
+                </p>
+              </div>
+            </Link>
+          </div>
+
+          {/* Project 7 */}
+          <div className="project__item">
+            <Link to="https://expert-admin-panel.vercel.app/" target="__blank">
+              <img src={img7} alt="Project 7" className="project__img" />
+              <div className="project__content">
+                <h3 className="project__title">
+                  <strong>
+                    Expert Admin Panel_1.0 Psychology Admin Dashboard
+                  </strong>
+                </h3>
+                <p className="project__description">
+                  PPS Admin Dashboard is a robust administration platform built
+                  from scratch using <strong>React.js</strong>,{" "}
+                  <strong>Tailwind CSS</strong>, and <strong>Node.js</strong>{" "}
+                  following a <strong>Microservices Architecture</strong>. It
+                  allows admins to manage doctors, monitor user activity, and
+                  handle support tickets efficiently through a scalable and
+                  secure system.
+                </p>
+                <strong>Features:</strong>
+                <div>
+                  <ul>
+                    <li>
+                      <strong>Admin Dashboard</strong>: A centralized platform
+                      for managing users, doctors, and system activity.
+                    </li>
+                    <li>
+                      <strong>Microservices Integration</strong>: Utilizes
+                      independent services for authentication, admin logic, and
+                      notifications.
+                    </li>
+                    <li>
+                      <strong>User & Doctor Management</strong>: Activate or
+                      deactivate doctor profiles with real-time status updates.
+                    </li>
+                    <li>
+                      <strong>Support Ticket System</strong>: Integrated system
+                      for tracking and resolving user issues.
+                    </li>
+                    <li>
+                      <strong>Secured API Consumption</strong>: Communicates
+                      securely with multiple backend services for seamless
+                      functionality.
+                    </li>
+                    <li>
+                      <strong>Performance Optimized</strong>: Fast load times
+                      and efficient state handling across components.
+                    </li>
+                    <li>
+                      <strong>Responsive Design</strong>: Works smoothly on all
+                      screen sizes, including mobile and desktop.
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  <strong>Demo Login:</strong> gautamp |{" "}
+                  <strong>Admin ID:</strong> subadmin01 |{" "}
+                  <strong>Password:</strong> 1234
+                </p>
+              </div>
+            </Link>
+          </div>
         </Slider>
       </section>
     </>
-  );
-};
-
-// Custom Next Arrow Component
-const NextArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={`${className} custom-next`}
-      style={{
-        ...style,
-        display: "block",
-        right: "-20px",
-        backgroundColor: "black",
-      }}
-      onClick={onClick}
-    />
-  );
-};
-
-// Custom Prev Arrow Component
-const PrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={`${className} custom-prev`}
-      style={{
-        ...style,
-        display: "block",
-        left: "-20px",
-        backgroundColor: "black",
-      }}
-      onClick={onClick}
-    />
   );
 };
 
