@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React_portfolio/static/css/main.f347fc09.css",
-    "main.js": "/React_portfolio/static/js/main.275bef87.js",
+    "main.js": "/React_portfolio/static/js/main.ac90d402.js",
     "static/media/dp.jpg": "/React_portfolio/static/media/dp.2ffd4f5672ca2224a5c4.jpg",
     "static/media/project1.jpg": "/React_portfolio/static/media/project1.5c2e85adfcac9d357987.jpg",
     "static/media/project3.jpg": "/React_portfolio/static/media/project3.d94f4e642fc880857594.jpg",
@@ -9,9 +9,11 @@
     "static/media/goldenmaceLogo.png": "/React_portfolio/static/media/goldenmaceLogo.d00c5ed91e28fb10ae60.png",
     "static/media/project4.jpg": "/React_portfolio/static/media/project4.d7d1991f3377423b2afe.jpg",
     "static/media/project5.jpg": "/React_portfolio/static/media/project5.ca643a4eb1906f568db2.jpg",
+    "static/media/project6.jpg": "/React_portfolio/static/media/project6.61bbf40faaf40a739b4c.jpg",
     "static/media/dp1.jpg": "/React_portfolio/static/media/dp1.fe8fd8ac7653c7da9cf1.jpg",
     "static/media/project2.jpg": "/React_portfolio/static/media/project2.518d747b6ed76603ab58.jpg",
-    "static/media/GautamResume.pdf": "/React_portfolio/static/media/GautamResume.79be6220563814f09758.pdf",
+    "static/media/project7.jpg": "/React_portfolio/static/media/project7.e927ea6cdd0f1e215527.jpg",
+    "static/media/GautamResume.pdf": "/React_portfolio/static/media/GautamResume.c42b0cf082dcf8fa2ac0.pdf",
     "static/media/logo.jpeg": "/React_portfolio/static/media/logo.3673cc93d488240c906f.jpeg",
     "static/media/slick.svg": "/React_portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/React_portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -19,10 +21,10 @@
     "static/media/slick.woff": "/React_portfolio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/React_portfolio/index.html",
     "main.f347fc09.css.map": "/React_portfolio/static/css/main.f347fc09.css.map",
-    "main.275bef87.js.map": "/React_portfolio/static/js/main.275bef87.js.map"
+    "main.ac90d402.js.map": "/React_portfolio/static/js/main.ac90d402.js.map"
   },
   "entrypoints": [
     "static/css/main.f347fc09.css",
-    "static/js/main.275bef87.js"
+    "static/js/main.ac90d402.js"
   ]
 }
