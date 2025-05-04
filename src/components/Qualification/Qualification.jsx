@@ -204,7 +204,7 @@ const Qualification = () => {
                     React.js/node.js Developer
                   </span>
                   <div className="qualification_calender">
-                    <i className="uil uil-briefcase-alt"></i> 11/2024 - 04/2025
+                    <i className="uil uil-briefcase-alt"></i> 12/2024 - 05/2025
                   </div>
                 </div>
               </div>
